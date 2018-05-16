@@ -8,6 +8,9 @@ if __name__ == '__main__':
     parser.add_argument('divisor', type=float, help='Divisor')
     
     args = parser.parse_args()
-    
-    print(args.numerator / args.divisor)
+
+    if args.divisor == 0:
+        print ('division by zero')
+    else:
+        print(args.numerator / args.divisor)
 
